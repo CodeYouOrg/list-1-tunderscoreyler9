@@ -31,8 +31,16 @@ def match_ends(words):
 # before combining them.
 
 def front_x(words):
-    # +++your code here+++
-    return
+    x_words = []
+    sorted_words = []
+
+    for word in words:
+        if word[0].lower() == 'x':
+            x_words.append(word)
+        else:
+            sorted_words.append(word)
+    
+    return sorted(x_words) + sorted(sorted_words)
 
 
 # C. sort_last
